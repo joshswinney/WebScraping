@@ -42,7 +42,8 @@ for row in table_rows[:5]:
     twofour_delta1 = cols[6].text.strip()
     twofour_delta2 = float(twofour_delta1.strip('%'))
     twofour_price = round(price_float/(1+(twofour_delta2/100)),2)
-    #twofour_price = twofour_price('{:,.2f}'.format)
+
+    twofour_price = "{:,.2f}".format(twofour_price)
 
     print(f"Name:      {name}")
     print(f"Ticker:    {ticker}")
